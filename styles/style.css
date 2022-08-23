@@ -72,6 +72,7 @@ body {
   font-weight: 600;
   z-index: 2;
   margin-bottom: 50px;
+  -webkit-appearance: none;
   transition: transform 0.2s;
 }
 
