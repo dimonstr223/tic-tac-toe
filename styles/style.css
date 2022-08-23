@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #fb6767;
+  --winning-blocks: #2b1e3c;
+}
+
+body {
+  color: var(--purple);
+  font-family: "Finger Paint", cursive;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.game {
+  background-color: #43305e;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.game__title {
+  font-size: 54px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.game__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game__gameboard {
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  transition: transform 1s ease;
+}
+
+.game__gameboard--restart {
+  transform: rotate(360deg);
+}
+
+.game__gameboard-box {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pink);
+  font-size: 100px;
+}
+
+.game__btn {
+  font-family: "Finger Paint", cursive;
+  opacity: 0.8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--pink);
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 2;
+  margin-bottom: 50px;
+  transition: transform 0.2s;
+}
+
+.game__btn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+@media (max-width: 430px) {
+  .game__title {
+    font-size: 36px;
+  }
+  .game__gameboard {
+    width: 300px;
+  }
+  .game__gameboard-box {
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+  }
+}
