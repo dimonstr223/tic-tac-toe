@@ -165,3 +165,7 @@ input,
 select {
   vertical-align: middle;
 }
+
+button {
+  color: #000;
+}
