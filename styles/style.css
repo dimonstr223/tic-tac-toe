@@ -66,13 +66,11 @@ body {
   padding: 10px 20px;
   border-radius: 10px;
   background-color: var(--pink);
-  color: #000;
   border: none;
   font-size: 20px;
   font-weight: 600;
   z-index: 2;
   margin-bottom: 50px;
-  -webkit-appearance: none;
   transition: transform 0.2s;
 }
 
